@@ -1,0 +1,122 @@
+<div class="container-fluid mt-4">
+    <h3>Enter the Match details</h3>
+</div>
+<form class=" mt-4 container-fluid" action="">
+    <div class="mb-3">
+        <label for="exampleInputName" class="form-label">Enter the Playing Country 1</label>
+        <br>
+        <select class="dropdown2 ">
+            <option value="">Pakistan</option>
+            <option value="">England</option>
+            <option value="">India</option>
+            <option value="">Australia</option>
+            <option value="">New Zealand</option>
+            <option value="">Zimbabwe</option>
+        </select>
+        <!-- <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp"> -->
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputName" class="form-label">Enter the Playing Country 2</label>
+        <br>
+        <select class="dropdown2 ">
+            <!-- <option value="">Pakistan</option> -->
+            <option value="">England</option>
+            <option value="">India</option>
+            <option value="">Australia</option>
+            <option value="">New Zealand</option>
+            <option value="">Zimbabwe</option>
+        </select>
+        <!-- <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp"> -->
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputName" class="form-label">Enter the name of the Stadium in which match will take
+            place</label>
+        <br>
+        <select class="dropdown2 ">
+            <option value="">Qaddafi Stadium</option>
+            <option value="">National Stadium</option>
+            <option value="">India</option>
+            <option value="">Australia</option>
+            <option value="">New Zealand</option>
+            <option value="">Zimbabwe</option>
+        </select>
+        <!-- <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp"> -->
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+    </div>
+    <div class="mb-3">
+        <label for="Status" class="form-label">Status</label>
+        <div>
+            <input type="radio" name="MyGender" id="Status"> Open
+            <input type="radio" name="MyGender" id="Status"> Closed
+            <!-- Other <input type="radio" name="MyGender" id="Status"> -->
+        </div>
+        <!-- <input type="number" class="form-control" id="exampleInputCapacity" aria-describedby="emailHelp"> -->
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputName" class="form-label">Enter the name of the Cricket Board Official</label>
+        <input type="text" class="form-control" id="exampleInputName" aria-describedby="emailHelp">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputCapacity" class="form-label">Date & Time of the match</label>
+        <input type="datetime-local" class="form-control" id="exampleInputCapacity" aria-describedby="emailHelp">
+        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+    </div>
+    <div class="mb-3">
+            <span class="form-label mb-3">Match Type</span>
+            <br >
+            <label for="chkYes">
+                <input type="radio" id="chkYes" name="matchType" onclick="ShowHideDiv()" />
+                ODI
+            </label>
+            <label for="chkNo">
+                <input type="radio" id="chkNo" name="matchType" onclick="ShowHideDiv()" />
+                Test Match
+            </label>
+            <label for="chkNo">
+                <input type="radio" id="chkNo" name="matchType" onclick="ShowHideDiv()" />
+                T20i
+            </label>
+           <br>
+           <br>
+            <div id="ticketType" style="display: none">
+                Ticket Type:
+                <br>
+                <!-- <input type="text" id="txtPassportNumber" /> -->
+                <select class="dropdown2 ">
+                    <option value="">Discounted</option>
+                    <option value="">Pass</option>
+                </select>
+                
+
+            </div>
+        
+        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Submit</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Do you want to save the match in the database
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- <div class="modal-body">
+                    ...
+                </div> -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</form>
